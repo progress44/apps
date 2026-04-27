@@ -8,7 +8,7 @@ metadata:
   description: A novel end-to-end trained large multimodal model that combines a vision encoder and Vicuna for general-purpose visual and language understanding.
   appid: ollamallava1613bv2
   title: LLaVA 1.6 13B (Ollama)
-  version: '1.0.16'
+  version: '1.0.20'
   categories:
     - AI
 sharedEntrances:
@@ -44,6 +44,9 @@ spec:
     - Better visual conversation for more scenarios, covering different applications.
     - Better world knowledge and logical reasoning.
 
+  upgradeDescription: |
+    Upgrade Ollama to 0.20.5, upgrade proxy to fix think mode compatibility with non-thinking models.
+
   developer: haotian-liu
   website: https://llava-vl.github.io/
   sourceCode: https://github.com/haotian-liu/LLaVA
@@ -62,7 +65,7 @@ spec:
   limitedDisk: 500Gi
   limitedMemory: 40Gi
   requiredMemory: 4200Mi
-  requiredGpu: 1Gi
+  requiredGpu: 13Gi
   limitedGpu: 24Gi
   {{- else }}
   requiredMemory: 64Mi

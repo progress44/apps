@@ -8,7 +8,7 @@ metadata:
   description: The first models to achieve true iterative self-improvement
   appid: ollamacogito14bv2
   title: Cogito 14B (Ollama)
-  version: '1.0.16'
+  version: '1.0.18'
   categories:
     - AI
 sharedEntrances:
@@ -58,6 +58,9 @@ spec:
     - Complete transparency in reasoning process with <think> tags
     - Build on our research or deploy anywhere without restrictions
 
+  upgradeDescription: |
+    Upgrade Ollama to 0.18.3. Key performance improvements include optimized cache handling for faster local inference, correct context compaction for better memory efficiency, improved tool calling accuracy, and ROCm 7 support for AMD GPUs.
+
   developer: Deep Cogito
   website: https://www.deepcogito.com/
   sourceCode: https://huggingface.co/deepcogito/cogito-v1-preview-qwen-14B
@@ -77,7 +80,7 @@ spec:
   limitedDisk: 500Gi
   limitedMemory: 40Gi
   requiredMemory: 4200Mi
-  requiredGpu: 1Gi
+  requiredGpu: 16Gi
   limitedGpu: 24Gi
   {{- else }}
   requiredMemory: 64Mi
